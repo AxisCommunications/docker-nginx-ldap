@@ -4,6 +4,8 @@ The official Nginx [Docker image][1] with the [kvspb/nginx-auth-ldap][2]
 module included, in order to add the functionality of authenticating users
 via an LDAP server.
 
+If you are not building this directly yourself you may find information about
+available tags over on [Docker Hub][6].
 
 ## Usage
 The LDAP module is added in such a way that everything else inside the container
@@ -83,3 +85,5 @@ author's personal project:
 [3]: https://hub.docker.com/_/nginx
 [4]: https://serverfault.com/a/361163
 [5]: https://docs.nginx.com/nginx/admin-guide/dynamic-modules/dynamic-modules/
+[6]: https://hub.docker.com/repository/docker/axistools/nginx-ldap
+``
