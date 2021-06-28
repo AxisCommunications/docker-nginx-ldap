@@ -68,6 +68,11 @@ Inspiration for this project has been collected from the following sources:
 - https://stackoverflow.com/questions/57739560/what-do-i-need-to-change-in-nginx-official-dockers-image-to-have-the-set-misc-n
 - https://github.com/liminaab/infra-hub/tree/master/nginx-ldap
 
+and the GitHub Actions configurations have been reused from the original
+author's personal project:
+
+- https://github.com/JonasAlfredsson/docker-nginx-certbot
+
 
 
 
