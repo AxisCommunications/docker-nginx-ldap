@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     libc-dev \
     make \
     openssl-dev \
-    pcre-dev \
+    pcre2-dev \
     zlib-dev \
     linux-headers \
     libxslt-dev \
@@ -20,7 +20,6 @@ RUN apk add --no-cache \
     geoip-dev \
     perl-dev \
     libedit-dev \
-    mercurial \
     bash \
     alpine-sdk \
     findutils \
