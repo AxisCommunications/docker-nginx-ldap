@@ -1,4 +1,4 @@
-FROM nginx:1.21.6-alpine AS base
+FROM nginx:1.23.0-alpine AS base
 
 # Create a builder image.
 FROM base AS builder
