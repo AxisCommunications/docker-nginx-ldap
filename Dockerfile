@@ -1,4 +1,4 @@
-FROM nginx:1.21.6-alpine AS base
+FROM nginx:1.23.0-alpine AS base
 
 # Create a builder image.
 FROM base AS builder
@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     libc-dev \
     make \
     openssl-dev \
-    pcre-dev \
+    pcre2-dev \
     zlib-dev \
     linux-headers \
     libxslt-dev \
@@ -20,7 +20,6 @@ RUN apk add --no-cache \
     geoip-dev \
     perl-dev \
     libedit-dev \
-    mercurial \
     bash \
     alpine-sdk \
     findutils \
