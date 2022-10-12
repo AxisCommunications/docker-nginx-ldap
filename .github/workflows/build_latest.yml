@@ -32,7 +32,7 @@ jobs:
         run: bash .github/version_extractor.sh ./Dockerfile
 
       - name: Build and push latest Alpine image with all tags
-        uses: docker/build-push-action@v3.1.1
+        uses: docker/build-push-action@v3.2.0
         with:
           context: ./
           file: ./Dockerfile
