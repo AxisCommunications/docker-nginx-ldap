@@ -29,7 +29,7 @@ jobs:
 
       - name: Extract the Nginx version numbers from the Dockerfile
         id: tagger
-        run: bash .github/version_extractor.sh ./Dockerfile
+        run: bash .github/version_extractor.sh ./Dockerfile >> $GITHUB_ENV
 
       - name: Build and push latest Alpine image with all tags
         uses: docker/build-push-action@v4.0.0
@@ -44,6 +44,6 @@ jobs:
           tags: |
             axistools/nginx-ldap:alpine
             axistools/nginx-ldap:mainline-alpine
-            axistools/nginx-ldap:${{ steps.tagger.outputs.NGINX_MAJOR }}-alpine
-            axistools/nginx-ldap:${{ steps.tagger.outputs.NGINX_MAJOR }}.${{ steps.tagger.outputs.NGINX_MINOR }}-alpine
-            axistools/nginx-ldap:${{ steps.tagger.outputs.NGINX_MAJOR }}.${{ steps.tagger.outputs.NGINX_MINOR }}.${{ steps.tagger.outputs.NGINX_PATCH }}-alpine
+            axistools/nginx-ldap:${{ env.NGINX_MAJOR }}-alpine
+            axistools/nginx-ldap:${{ env.NGINX_MAJOR }}.${{ env.NGINX_MINOR }}-alpine
+            axistools/nginx-ldap:${{ env.NGINX_MAJOR }}.${{ env.NGINX_MINOR }}.${{ env.NGINX_PATCH }}-alpine
