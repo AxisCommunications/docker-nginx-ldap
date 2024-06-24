@@ -1,13 +1,13 @@
 name: "build-latest"
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
       - "master"
     paths:
       - "Dockerfile*"
-      - ".github/workflows/**"
   pull_request:
     branches:
       - "main"
