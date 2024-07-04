@@ -42,6 +42,7 @@ jobs:
             linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
+            axistools/nginx-ldap:latest
             axistools/nginx-ldap:alpine
             axistools/nginx-ldap:mainline-alpine
             axistools/nginx-ldap:${{ env.NGINX_MAJOR }}-alpine
