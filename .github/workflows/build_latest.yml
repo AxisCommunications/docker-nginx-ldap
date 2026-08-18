@@ -15,6 +15,9 @@ on:
     paths:
       - "Dockerfile*"
 
+permissions:
+  contents: read
+
 jobs:
   docker_buildx_alpine:
     runs-on: ubuntu-latest
